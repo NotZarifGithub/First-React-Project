@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import CardList from "./CardList";
-import SearchBox from "./SearchBox";
-import {tools} from "./tools";
+import CardList from "../components/CardList";
+import SearchBox from "../components/SearchBox";
+import {tools} from "../tools";
 
 class App extends Component {
     constructor() {
@@ -25,9 +25,7 @@ class App extends Component {
         })
         return (
             <div className="tc">
-                <div>
-                    <span>Languages % Tools</span>
-                </div>
+                <h1>Languages % Tools</h1>
                 <CardList tools={filteredTools}/>
             </div>
         );

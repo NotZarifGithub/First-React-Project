@@ -1,5 +1,5 @@
 import react from 'react';
-import {tools} from "./tools";
+import {tools} from "../tools";
 
 const Card = (props) => {
     return (

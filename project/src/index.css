@@ -135,9 +135,9 @@ img {
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-span {
+h1 {
   font-family: source-code-pro, cursive;
-  font-size: 3em;
+  font-size: 2em;
   position: absolute;
   top: 10%;
   left: 50%;
@@ -149,7 +149,7 @@ span {
    transition: background-size .7s, background-position .5s ease-in-out;
 }
 
-span:hover {
+h1:hover {
   background-size: 100% 100%;
   background-position: 0% 100%;
   transition: background-position .7s, background-size .5s ease-in-out;
