@@ -2,15 +2,18 @@ import React, { Component } from "react";
 import CardList from "./CardList";
 import SearchBox from "./SearchBox";
 import {tools} from "./tools";
-import ParticlesBackground from "./Components/ParticlesBackground";
 
 class App extends Component {
     constructor() {
         super()
         this.state = {
-        tools: tools,
+        tools: [],
         searchfield: ''
       }
+    }
+    
+    componentDidMount() {
+        this.setState({ tools: tools});
     }
 
     onSearchChange = (event) => {
@@ -22,9 +25,9 @@ class App extends Component {
         })
         return (
             <div className="tc">
-                <ParticlesBackground/>
-                <h1> Languages % Tools </h1>
-                <SearchBox searchChange={this.onSearchChange}/>
+                <div>
+                    <span>Languages % Tools</span>
+                </div>
                 <CardList tools={filteredTools}/>
             </div>
         );
